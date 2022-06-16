@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+canvas {
+  width: 480px; /* 80 * 6 */
+  height: 480px;
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  /* right: 0; */
+  /* margin: auto; */
+  /* background-color: red; */
+}
+
+#container-Hline > div {
+  position: absolute;
+  width: 95px; /* DOT_INTERVAL + LINE_WIDTH */
+  height: 15px; /* LINE_WIDTH */
+  border-radius: 15px;
+}
+
+#container-Vline > div {
+  position: absolute;
+  width: 15px; /* LINE_WIDTH */
+  height: 95px; /* DOT_INTERVAL + LINE_WIDTH */
+  border-radius: 15px;
+}
+
+#container-tile > div {
+  position: absolute;
+  width: 65px; /* DOT_INTERVAL - LINE_WIDTH */
+  height: 65px; /* DOT_INTERVAL - LINE_WIDTH */
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#getTileNumText0 {
+  position: absolute;
+  left: 50px;
+  top: 480px;
+  font-size: 20px;
+  color: blue;
+  opacity: 1;
+  font-weight: bold;
+}
+
+#getTileNumText1 {
+  position: absolute;
+  left: 250px;
+  top: 480px;
+  font-size: 20px;
+  color: red;
+  opacity: 0.4;
+  font-weight: normal;
+}
+
+#normalModeText {
+  position: absolute;
+  left: 480px;
+  top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+#waitButton {
+  position: absolute;
+  left: 480px;
+  top: 50px;
+  width: 140px;
+  height: 40px;
+  font-size: 20px;
+  background:rgba(0, 0, 255, 0.5);
+  border-radius: 20px;
+}
+
+#modeChangeButton {
+  position: absolute;
+  left: 480px;
+  top: 120px;
+  width: 140px;
+  height: 40px;
+  font-size: 17px;
+}
+
+#editModeText {
+  position: absolute;
+  left: 500px;
+  top: 190px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+#undoButton {
+  position: absolute;
+  left: 480px;
+  top: 220px;
+  width: 65px;
+  height: 40px;
+  font-size: 20px;
+  background:rgba(255, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+#redoButton {
+  position: absolute;
+  left: 555px;
+  top: 220px;
+  width: 65px;
+  height: 40px;
+  font-size: 20px;
+  background:rgba(255, 0, 0, 0.5);
+  border-radius: 20px;
+}
